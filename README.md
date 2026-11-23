@@ -58,9 +58,17 @@ berlin-airbnb-market-analysis/
 
 ---
 
-## 📊 Interactive Dashboard & Key Findings (Tableau)
+## 📊 Dashboard & Visualizations in Tableau
 
-<img width="1337" height="943" alt="Captura de pantalla 2026-11-22 a las 10 22 57 p  m" src="https://github.com/user-attachments/assets/fdb32122-c588-4418-82ee-2e8e7b9536ae" />
+![Interactive Dashboard](view_interactive_dashboard.png)
+
+![Berlin Districts Map](berlin_districts_map.png)
+
+![Average Price by District](avg_price_by_district.png)
+
+![Average Price by Room Type](avg_price_by_room_type.png)
+
+![Price by Term](price_by_term.png)
 
 
 ### Visual Breakdown & Analytical Insights
