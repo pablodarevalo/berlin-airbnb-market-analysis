@@ -88,7 +88,7 @@ All four views are connected via interactive action filters in Tableau. Clicking
 
 ## 🚀 How to Reproduce
 
-1. **Dataset:** Download the Berlin `listings.csv.gz` and `neighbourhoods.csv` files from [Inside Airbnb](http://insideairbnb.com/get-the-data/).
-2. **ETL Pipeline:** Run `python/etl_cleaning_and_features.py` using Python 3.10+ (`pandas`, `numpy`) to generate the cleaned dataset with engineered `stay_tier` and `is_high_price_outlier` columns.
-3. **SQL Analysis:** Execute `sql/01_schema_setup.sql` to create the MySQL table structure and load the processed CSV, then run `sql/02_exploratory_analysis.sql` to reproduce the summary metrics.
-4. **Visualization:** Open `tableau/berlin_airbnb_dashboard.twbx` in Tableau Desktop or Tableau Public to explore the interactive dashboard locally.
+1. **Dataset**: Download the Berlin `listings.csv.gz` and `neighbourhoods.csv` files from Inside Airbnb.
+2. **ETL Pipeline**: Run `python/etl_cleaning_and_features.py` using Python 3.10+ (`pandas`, `numpy`, `sqlalchemy`, `pymysql`) to clean the raw data, flag `is_high_price_outlier`, load the `airbnb_berlin` database in MySQL, create `vw_airbnb_berlin_bi`, and export the BI dataset.
+3. **SQL Analysis**: Run `sql/02_exploratory_analysis.sql` in MySQL against `airbnb_berlin` to reproduce the market, pricing, host scale, and district metrics.
+4. **Visualization**: Upload your packaged workbook (`tableau/berlin_airbnb_dashboard.twbx`) or open your local Tableau workbook in Tableau Desktop / Tableau Public to explore the interactive dashboard.
